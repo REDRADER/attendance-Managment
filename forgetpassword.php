@@ -34,7 +34,7 @@ if(isset($_POST['step1'])) {
 
 <?php 
 //make connection
-$con = new mysqli('localhost','root','','attendance');
+$con = new mysqli('localhost','root','root1234','attendance');
 
 if ($con->connect_error){
 	die("connection error");

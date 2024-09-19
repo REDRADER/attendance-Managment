@@ -30,7 +30,7 @@ session_start();
 <?php 
 
 //make connection
-$con = new mysqli('localhost','root','','attendance');
+$con = new mysqli('localhost','root','root1234','attendance');
 
 if ($con->connect_error){
 	echo "<script>window.open('error connecting to database','_self')</script>";
