@@ -33,7 +33,9 @@ session_start();
 $con = new mysqli('localhost','root','','attendance');
 
 if ($con->connect_error){
+	echo "<script>window.open('admin.php','_self')</script>";
 	die("connection error");
+	
 }
 else{
 	echo "";
