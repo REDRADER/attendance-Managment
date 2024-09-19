@@ -15,7 +15,7 @@
 		//	{
 		?>
 		<?php 
-$con = mysqli_connect('localhost','root','','attendance');		
+$con = mysqli_connect('localhost','root','root1234','attendance');		
 $result = mysqli_query($con,"select count(1) FROM test");
 $row = mysqli_fetch_array($result);
 
@@ -59,7 +59,7 @@ echo "Total rows: " . $numbers;
 
 if(isset($_POST['submit'])) {
 
-    $con = mysqli_connect('localhost','root','','attendance');
+    $con = mysqli_connect('localhost','root','root1234','attendance');
 
     if ($con->connect_error){
         die("connection error");

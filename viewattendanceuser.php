@@ -27,7 +27,7 @@
  if(isset($_POST['eid'])) {
 	 
 //make connection
-$con = mysqli_connect('localhost','root','','attendance');
+$con = mysqli_connect('localhost','root','root1234','attendance');
 
     if ($con->connect_error){
         die("connection error");
@@ -39,7 +39,7 @@ $con = mysqli_connect('localhost','root','','attendance');
  ?>	
  <?php 
              $Eid = $_POST['eid'];
-	          $con = mysqli_connect('localhost','root','','attendance');
+	          $con = mysqli_connect('localhost','root','root1234','attendance');
               $result = mysqli_query($con,"SELECT * FROM `attendance_taken` WHERE eid='$Eid'");
 			  $row = mysqli_fetch_array($result);
 			  $total = $row[0];

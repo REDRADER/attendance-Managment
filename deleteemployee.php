@@ -5,7 +5,7 @@
 
 
 
-    $con = mysqli_connect('localhost','root','','attendance');
+    $con = mysqli_connect('localhost','root','root1234','attendance');
 
     if ($con->connect_error){
         die("connection error");
